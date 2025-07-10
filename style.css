@@ -299,7 +299,9 @@ section {
 
 /* ABOUT SECTION */
 
-.about {
+/* ABOUT SECTION */
+
+#about {
   position: relative;
 }
 
@@ -321,16 +323,6 @@ section {
   display: flex;
 }
 
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -344,13 +336,13 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
+/* Removed .about-pic and .section__pic-container since profile image is gone */
 
 /* EXPERIENCE SECTION */
 
