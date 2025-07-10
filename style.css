@@ -221,16 +221,16 @@ section {
     color: #c68efd;
   }
   25% {
-    color: #9929ea;
+    color: #a55eea;
   }
   50% {
     color: #aa60c8;
   }
-  80% {
+  75% {
     color: #45aaf2;
   }
   100% {
-    color: #a55eea;
+    color: #9929ea;
   }
 }
 
