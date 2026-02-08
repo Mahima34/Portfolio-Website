@@ -1,0 +1,42 @@
+2026-02-08T16:30:32.225Z INFO Is remote: false
+2026-02-08T16:30:32.228Z INFO Starting Local. Installation path: undefined
+2026-02-08T16:30:32.232Z INFO [MainProvider] Creating new MainProvider instance...
+2026-02-08T16:30:32.236Z INFO [TabsManager] Code view listener set up at initialization
+2026-02-08T16:30:32.239Z INFO Installation path exists: c:\Users\Mahima Rajput\Desktop\portfolio-website\assets
+2026-02-08T16:30:32.241Z INFO Initializing database with URL: file:C:\Users\MAHIMA~1\AppData\Local\Temp\pythagora-temp\pythagora.db
+2026-02-08T16:30:32.250Z INFO Database file exists, skipping prisma generate/push for faster startup
+2026-02-08T16:30:32.252Z INFO Database initialized successfully
+2026-02-08T16:30:32.254Z INFO [Migration] Checking for database migration...
+2026-02-08T16:30:32.413Z INFO [TabsManager] First file opened, triggering split view
+2026-02-08T16:30:32.415Z INFO [MainProvider] First file opened, creating split view
+2026-02-08T16:30:36.230Z INFO [Migration] No migration needed
+2026-02-08T16:30:39.111Z INFO [TabsManager] First file opened, triggering split view
+2026-02-08T16:30:39.113Z INFO [MainProvider] First file opened, creating split view
+2026-02-08T16:31:53.681Z INFO Closing entire Pythagora extension...
+2026-02-08T16:31:53.761Z ERROR Error closing extension
+Error: Canceled
+Stack: Canceled: Canceled
+    at new Wj (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:120928)
+    at kE.U (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:125538)
+    at Proxy.r.<computed>.n.charCodeAt.r.<computed> (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:29:123032)
+    at vA.g (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:41231)
+    at vA.executeCommand (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:116:40735)
+    at Object.executeCommand (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:213:104946)
+    at closeEntirePythagoraExtension (c:\Users\Mahima Rajput\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.6.19\out\extension.js:542:31)
+    at Object.deactivate (c:\Users\Mahima Rajput\.vscode\extensions\pythagoratechnologies.pythagora-vs-code-2.6.19\out\extension.js:409:15)
+    at GK.eb (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:11880)
+    at file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:10030
+    at Array.map (<anonymous>)
+    at GK.$ (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:10018)
+    at GK.terminate (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:120:10261)
+    at _N.terminate (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:122:914)
+    at Ur (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:405:11143)
+    at MessagePortMain.<anonymous> (file:///c:/Users/Mahima%20Rajput/AppData/Local/Programs/Microsoft%20VS%20Code/bdd88df003/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:405:7610)
+    at MessagePortMain.emit (node:events:519:28)
+    at MessagePortMain.emit (node:domain:489:12)
+    at Object.MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2959)
+    at Object.topLevelDomainCallback (node:domain:161:15)
+    at Object.callbackTrampoline (node:internal/async_hooks:128:24)
+Extra context: {
+  "message": "Canceled"
+}
