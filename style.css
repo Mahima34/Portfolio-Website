@@ -589,3 +589,7 @@ footer p {
   font-size: 0.9rem;
   margin: 0;
 }
+
+#about .title {
+  margin-bottom: 2rem;
+}
