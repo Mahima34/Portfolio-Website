@@ -24,8 +24,8 @@
           <li><a href="#work-experience">Experience</a></li>
           <li><a href="#experience">Skills</a></li>
           <li><a href="#education">Education</a></li>
-          <!-- <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li> -->
+          <!-- <li><a href="#certifications">Certifications</a></li> -->
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -43,8 +43,8 @@
           <li><a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-          <!-- <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+          <!-- <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li> -->
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -110,71 +110,7 @@ Also familiar with basic DevOps concepts such as CI/CD pipelines, version contro
 
     
 <section id="work-experience">
-  <style>
-    .timeline { position: relative; padding-left: 32px; }
-    .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: #e0e0e0; }
 
-    .t-item { position: relative; margin-bottom: 2rem; }
-    .t-item:last-child { margin-bottom: 0; }
-
-    .t-dot { position: absolute; left: -29px; top: 10px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 2px solid #ccc; transition: border-color .2s, background .2s; z-index: 1; }
-    .t-item:hover .t-dot { background: #1D9E75; border-color: #1D9E75; }
-
-    .t-card { background: #fff; border: 1px solid #ebebeb; border-radius: 12px; padding: 1.25rem 1.5rem; transition: border-color .2s; }
-    .t-item:hover .t-card { border-color: #bbb; }
-
-    .t-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
-    .t-badge { font-size: 11px; font-weight: 500; letter-spacing: .06em; background: #f5f5f5; color: #666; border: 1px solid #e0e0e0; border-radius: 999px; padding: 3px 10px; white-space: nowrap; flex-shrink: 0; }
-    .t-current { background: #E1F5EE; color: #0F6E56; border-color: #5DCAA5; }
-
-    .t-role { font-size: 17px; font-weight: 600; color: #111; margin: 0 0 3px; }
-    .t-company { font-size: 13px; color: #888; margin: 0 0 1rem; display: flex; align-items: center; gap: 6px; }
-
-    .t-desc { font-size: 14px; line-height: 1.7; color: #555; margin: 0 0 1rem; }
-
-    .t-divider { height: 1px; background: #f0f0f0; margin: .75rem 0; }
-
-    .t-highlights { display: flex; flex-wrap: wrap; gap: 8px; margin-top: .5rem; }
-    .t-hl { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #555; }
-    .t-hl::before { content: '✓'; color: #1D9E75; font-weight: 700; }
-
-    .t-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: .75rem; }
-    .t-tag { font-size: 12px; font-weight: 500; color: #555; background: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 6px; padding: 3px 10px; }
-  </style>
-
-<section id="work-experience">
-  <style>
-    .timeline { position: relative; padding-left: 36px; margin-top: 2.5rem; }
-    .timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: #e0e0e0; }
-
-    .t-item { position: relative; margin-bottom: 2.5rem; }
-    .t-item:last-child { margin-bottom: 0; }
-
-    .t-dot { position: absolute; left: -31px; top: 12px; width: 16px; height: 16px; border-radius: 50%; background: #fff; border: 2px solid #ccc; transition: border-color .2s, background .2s; z-index: 1; }
-    .t-item:hover .t-dot { background: #1D9E75; border-color: #1D9E75; }
-
-    .t-card { background: #fff; border: 1px solid #ebebeb; border-radius: 14px; padding: clamp(1.25rem, 3vw, 2rem); transition: border-color .2s; }
-    .t-item:hover .t-card { border-color: #bbb; }
-
-    .t-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
-
-    .t-badge { font-size: clamp(12px, 1.5vw, 14px); font-weight: 600; letter-spacing: .06em; background: #f5f5f5; color: #666; border: 1px solid #e0e0e0; border-radius: 999px; padding: 5px 14px; white-space: nowrap; flex-shrink: 0; }
-    .t-current { background: #E1F5EE; color: #0F6E56; border-color: #5DCAA5; }
-
-    .t-role { font-size: clamp(18px, 2.5vw, 22px); font-weight: 700; color: #111; margin: 0 0 5px; line-height: 1.2; }
-    .t-company { font-size: clamp(14px, 1.8vw, 16px); font-weight: 500; color: #888; margin: 0 0 1.1rem; display: flex; align-items: center; gap: 6px; }
-
-    .t-desc { font-size: clamp(14px, 1.8vw, 16px); line-height: 1.8; color: #444; margin: 0 0 1rem; font-weight: 400; }
-
-    .t-divider { height: 1px; background: #f0f0f0; margin: .85rem 0; }
-
-    .t-highlights { display: flex; flex-wrap: wrap; gap: 10px; margin-top: .5rem; }
-    .t-hl { display: flex; align-items: center; gap: 6px; font-size: clamp(13px, 1.6vw, 15px); font-weight: 500; color: #444; }
-    .t-hl::before { content: '✓'; color: #1D9E75; font-weight: 800; font-size: 15px; }
-
-    .t-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: .85rem; }
-    .t-tag { font-size: clamp(12px, 1.5vw, 14px); font-weight: 600; color: #444; background: #f5f5f5; border: 1px solid #e5e5e5; border-radius: 7px; padding: 5px 13px; }
-  </style>
 
   <p class="section__text__p1">My Professional</p>
   <h1 class="title">Experience</h1>
@@ -641,6 +577,10 @@ Also familiar with basic DevOps concepts such as CI/CD pipelines, version contro
           </div>
 
 
+
+
+          
+
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -665,8 +605,86 @@ Also familiar with basic DevOps concepts such as CI/CD pipelines, version contro
               </button>
             </div>
           </div>
+
+          <!-- Project 5: Task Manager -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Task Manager App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Task Manager App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Mahima34'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6: Blog Website -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Blog Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blog Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Mahima34'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 7: Movie Search App -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Movie Search App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Search App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Mahima34'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </div>      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
