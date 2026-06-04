@@ -1,56 +1,99 @@
 /* ============================================================
    MEDIAQUERIES — Mahima Rajput Portfolio
+   Fully Responsive: Mobile · Tablet · Desktop
    ============================================================ */
 
+/* ── LARGE DESKTOP (≤ 1400px) ── */
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+    height: auto;
+    min-height: 80vh;
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
   }
+
+  .section__pic-container {
+    width: 340px;
+    height: 340px;
+  }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
     height: fit-content;
   }
+
   #education,
   #certifications {
     height: fit-content;
   }
+
   .edu-containers,
   .cert-containers {
     flex-wrap: wrap;
   }
 }
 
+/* ── TABLET / SMALL LAPTOP (≤ 1200px) ── */
 @media screen and (max-width: 1200px) {
   #desktop-nav { display: none; }
   #hamburger-nav { display: flex; }
 
+  /* ── Profile Section ── */
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+    min-height: unset;
+    padding: 4rem 2rem 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .section__pic-container {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    flex-shrink: 0;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .section__text {
+    align-self: center;
+    width: 100%;
+  }
+
+  /* ── General Layout ── */
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
 
-  #profile,
   .section-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .arrow { display: none; }
 
-  section,
-  .section-container {
+  section {
     height: fit-content;
-  }
-
-  section { margin: 0 5%; }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+    margin: 0 5%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   .about-containers { margin-top: 0; }
@@ -70,8 +113,60 @@
   #projects .about-containers {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .title { font-size: 2.5rem; }
+  .ml3 { font-size: 2.5rem; }
 }
 
+/* ── MOBILE (≤ 768px) ── */
+@media screen and (max-width: 768px) {
+  /* ── Profile Section ── */
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: auto;
+    padding: 5rem 1.25rem 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .section__pic-container {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--purple-300);
+  }
+
+  .section__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title { font-size: 2rem; }
+  .ml3 { font-size: 1.8rem; }
+
+  section {
+    margin: 0 4%;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Projects: 1 column on mobile */
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── SMALL MOBILE (≤ 600px) ── */
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -79,10 +174,41 @@
     padding-bottom: 2rem;
   }
 
+  /* ── Profile Section ── */
   #profile {
-    height: fit-content;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: unset;
+    margin-bottom: 1rem;
+    padding: 5rem 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .section__pic-container {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--purple-300);
+    box-shadow: 0 8px 28px rgba(109, 40, 217, 0.2);
+  }
+
+  .section__text {
+    width: 100%;
+    text-align: center;
+    align-self: center;
   }
 
   article { font-size: 1rem; }
@@ -115,13 +241,8 @@
     text-align: center;
   }
 
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-
-  .title { font-size: 2rem; }
+  .title { font-size: 1.75rem; }
+  .ml3 { font-size: 1.6rem; }
 
   .text-container { text-align: justify; }
 
@@ -144,5 +265,46 @@
     grid-template-columns: 1fr;
   }
 
-  .ml3 { font-size: 2rem; }
+  /* Timeline */
+  .timeline { padding-left: 24px; }
+  .t-role { font-size: 1rem; }
+  .t-top { flex-direction: column; gap: 6px; }
+  .t-badge { align-self: flex-start; }
+
+  /* Buttons */
+  .btn-container {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.25rem;
+    min-width: 7rem;
+  }
+
+  section {
+    margin: 0 4%;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* ── EXTRA SMALL (≤ 400px) ── */
+@media screen and (max-width: 400px) {
+  .section__pic-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title { font-size: 1.5rem; }
+  .ml3 { font-size: 1.4rem; }
+
+  .logo { font-size: 1.25rem; }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.55rem 1rem;
+    min-width: 6rem;
+  }
 }
